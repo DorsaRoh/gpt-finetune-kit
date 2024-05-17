@@ -11,6 +11,10 @@ client = OpenAI(
    api_key = os.getenv("OPENAI_API_KEY"),
 )
 
+# load fine tuned model id from a file
+with open('model_id.txt', 'r') as file:
+    fine_tuned_model_id = file.read().strip()
+
 # app instance
 app = Flask(__name__)
 CORS(app)
