@@ -2,15 +2,20 @@
 
 Quickly fine-tune GPT models using the OpenAI API with a simple Flask backend and React frontend.
 
-## Quick Start
+### What's Fine-Tuning?
 
-### Prerequisites
+Fine-tuning is training a pre-trained AI model (like GPT) on a specific dataset to adapt it to particular needs or improve its performance on certain types of tasks!
 
-- Python 3.8+
-- Node.js 12.x+
-- npm
 
-### Installation
+## How it Works
+
+In the 'server' folder:
+    
+- The data to fine-tune the model is located in <i>**data/data.jsonl**</i>
+<i><br>(see finetune.py for the fine-tuning code)</br></i>
+- The fine-tuned model will be identified with an ID, which will be stored in <i>**model_id.txt**</i>
+
+## Usage
 
 1. **Clone the repository:**
    ```bash
@@ -18,27 +23,35 @@ Quickly fine-tune GPT models using the OpenAI API with a simple Flask backend an
    cd gpt-finetune-kit
     ```
 
-2. **Set up the backend:**
-Navigate to the server directory and install dependencies:
-```bash
+
+2. **Navigate to the 'server' directory**
+    ```bash
     cd server
     pip install -r requirements.txt
-```
+    ```
 
-The backend is now at http://localhost:8080
+2. **Insert the desired data and prompts in data/data.jsonl**
 
-Start the flask server
+3. **Fine-tune model**
+    ```bash
+    python finetune.py
+    ```
 
-```bash
+4. **Start the backend server to initiate the backend**
+    ```bash
     python server.py
-```
+    ```
+    <i>**The backend is now at http://localhost:8080**</i>
 
-3. **Set up the frontend:**
+
+5. **Set up the frontend:**
 Open a new terminal and navigate to the client directory
-```bash
+    ```bash
     cd ../client
     npm install
     npm run dev
-```
+    ```
 
-The frontend is now at http://localhost:3000
+    **<i>The frontend is now accessible at http://localhost:3000</i>**
+
+
