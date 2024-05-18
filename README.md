@@ -11,10 +11,21 @@ Fine-tuning is training a pre-trained AI model (like GPT) on a specific dataset 
 
 In the 'server' folder:
     
-- The data to fine-tune the model is located in <i>**data/data.jsonl**</i>
+- The data to fine-tune the model is located in `data/data.jsonl`
 <i><br>(see finetune.py for the fine-tuning code)</br></i>
-- The fine-tuned model will be identified with an ID, which will be stored in <i>**model_id.txt**</i>
+- The fine-tuned model will be identified with an ID, which will be stored in `model_id.txt`
 
+<i>Note: You will find sample data/prompts in data.jsonl</i>
+
+### API Key Requirement
+
+- You will need an OpenAI API key to use this toolkit.
+- Add your OpenAI API key to a `.env` file in the `server` directory:
+
+  ```plaintext
+  OPENAI_API_KEY=your_openai_api_key_here
+    ```
+    
 ## Usage
 
 1. **Clone the repository:**
