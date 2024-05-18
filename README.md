@@ -52,7 +52,7 @@ In the `server` folder:
     ```bash
     python server.py
     ```
-    <i>**The backend is now at http://localhost:8080**</i>
+    <i>**The backend is now at http://localhost:8080/api/home**</i>
 
 
 5. **Set up the frontend:**
