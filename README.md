@@ -1,3 +1,5 @@
+ gpt-finetune-kit
+
 ## run virtual env
 activate
 
