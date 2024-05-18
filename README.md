@@ -9,7 +9,7 @@ Fine-tuning is training a pre-trained AI model (like GPT) on a specific dataset 
 
 ## How it Works
 
-In the 'server' folder:
+In the `server` folder:
     
 - The data to fine-tune the model is located in `data/data.jsonl`
 <i><br>(see finetune.py for the fine-tuning code)</br></i>
