@@ -1,27 +1,44 @@
- gpt-finetune-kit
+# GPT-FineTune-Kit
 
+Quickly fine-tune GPT models using the OpenAI API with a simple Flask backend and React frontend.
 
-fine tune gpt models fast and easy with this template.
+## Quick Start
 
+### Prerequisites
 
-backend: flask
-frontend: react
+- Python 3.8+
+- Node.js 12.x+
+- npm
 
-api: openai api
+### Installation
 
-## run virtual env
-activate
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/gpt-finetune-kit.git
+   cd gpt-finetune-kit
+    ```
 
-## run backend:
-cd server
-python server.py
+2. **Set up the backend:**
+Navigate to the server directory and install dependencies:
+```bash
+    cd server
+    pip install -r requirements.txt
+```
 
-go to localhost:8080 to see.
+The backend is now at http://localhost:8080
 
-in new terminal,
+Start the flask server
 
-## run frontend
-cd client
-npm run dev
+```bash
+    python server.py
+```
 
-go to localhost:3000 to see
+3. **Set up the frontend:**
+Open a new terminal and navigate to the client directory
+```bash
+    cd ../client
+    npm install
+    npm run dev
+```
+
+The frontend is now at http://localhost:3000
