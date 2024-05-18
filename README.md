@@ -1,6 +1,6 @@
 # GPT-FineTune-Kit
 
-A ssuper easy tool to fine-tune GPT models using the OpenAI API with a simple Flask backend and React frontend.
+A super easy tool to fine-tune GPT models using the OpenAI API with a simple Flask backend and React frontend.
 
 ### What's Fine-Tuning?
 
