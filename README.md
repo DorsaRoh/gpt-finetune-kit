@@ -1,5 +1,14 @@
  gpt-finetune-kit
 
+
+fine tune gpt models fast and easy with this template.
+
+
+backend: flask
+frontend: react
+
+api: openai api
+
 ## run virtual env
 activate
 

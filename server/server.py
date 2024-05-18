@@ -23,7 +23,7 @@ CORS(app)
 @app.route("/api/home", methods=['GET'])
 def return_home():
     return jsonify({
-        'message': "Fine-tune OpenAI models",
+        'message': "Fine-tune OpenAI model",
     })
 
 # /api/text
