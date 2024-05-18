@@ -41,11 +41,8 @@ const Index: React.FC = () => {
   return (
     <div>
       <div>{message}</div>
-      {people.map((person, index) => (
-        <div key={index}>{person}</div>
-      ))}
       <div>
-        <h2>Generate Text</h2>
+        <h2>Enter prompt:</h2>
         <textarea
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}

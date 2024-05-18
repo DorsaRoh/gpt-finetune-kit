@@ -23,8 +23,7 @@ CORS(app)
 @app.route("/api/home", methods=['GET'])
 def return_home():
     return jsonify({
-        'message': "test",
-        'people': ['1', '2', '3']
+        'message': "Fine-tune OpenAI models",
     })
 
 # /api/text
@@ -37,10 +36,10 @@ def generate_text():
         response = client.chat.completions.create(
             model="gpt-3.5-turbo", # model
             messages=[ # role of model and user
-                {"role": "system", "content": "You are the goddess circe."},
+                {"role": "system", "content": "You are a helpful assistant."},
                 {"role": "user", "content": prompt}
             ],
-            max_tokens=1000,
+            max_tokens=100,
             temperature=0.9
         )
         generated_text = response.choices[0].message.content
