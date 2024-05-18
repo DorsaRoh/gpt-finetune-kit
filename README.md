@@ -66,3 +66,6 @@ Open a new terminal and navigate to the client directory
     **<i>The frontend is now accessible at http://localhost:3000</i>**
 
 
+Note: Please check your OpenAI projects dashboard to confirm the status of your fine-tuning jobs. If a job fails, it is likely due to improperly formatted or insufficient data.
+
+Happy fine-tuning!
